@@ -37,3 +37,12 @@ void compareDate(Date* date1, Date* date2)
 		printf("The 2 dates are different!\n");
 	}
 }
+
+Date* duplicateDate(Date* date)
+{
+	Date* res = create_date(date->day, date->month, date->year);
+	
+	return res;
+
+}
+

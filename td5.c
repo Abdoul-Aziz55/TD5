@@ -31,6 +31,10 @@ int main()
 	print_person(Zakia);
 
 	compareDate(Aziz->birthDate, Zakia->birthDate);
-
+	
+	Date* AzizBirthdate = duplicateDate(Aziz->birthDate);
+	printStr(Aziz->firstName);
+	printf(" was born on ");
+	print_date(AzizBirthdate); 
 	return 0;
 }
