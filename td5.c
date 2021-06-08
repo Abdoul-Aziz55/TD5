@@ -36,5 +36,9 @@ int main()
 	printStr(Aziz->firstName);
 	printf(" was born on ");
 	print_date(AzizBirthdate); 
+	printf("\n");
+	Person* solo = duplicatePerson(Aziz);
+	print_person(solo);
+
 	return 0;
 }

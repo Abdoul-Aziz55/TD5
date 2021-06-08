@@ -38,3 +38,13 @@ void print_person(Person* pers)
 
 
 }
+
+Person* duplicatePerson(Person* pers)
+{
+	Person* res = malloc(sizeof(Person));
+	res->firstName = pers->firstName;
+        res->name = pers->name;
+        res->birthDate = duplicateDate(pers->birthDate);  
+
+	return res;
+}
