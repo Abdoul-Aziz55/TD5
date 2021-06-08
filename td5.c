@@ -1,5 +1,6 @@
 #include "date.h"
 #include "person.h"
+#include "list.h"
 
 #include <stdio.h> 
 #include <stdlib.h>
@@ -10,7 +11,7 @@ int main()
 	
 	Date* d = create_date(8,6,2021);
 	Date* date1 = create_date(5,8,2030);
-	Date* date2 = create_date(5,9,1999);
+	Date* date2 = create_date(1,1,1969);
 	printf("\n");
 	print_date(d);
 	printf("\n");
@@ -39,6 +40,22 @@ int main()
 	printf("\n");
 	Person* solo = duplicatePerson(Aziz);
 	print_person(solo);
+
+	
+        /*-------------------------*/
+        // List structure
+
+	printf("\n-----------------------\n");
+
+	List* list = create_list();
+	
+	print_list(list);
+
+	insert(AzizBirthdate, list);
+	insert(d, list);
+	insert(date1, list);
+	insert(date2, list);
+	print_list(list);
 
 	return 0;
 }

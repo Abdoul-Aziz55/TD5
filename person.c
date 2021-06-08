@@ -6,6 +6,7 @@
 
 void printStr(char* str)
 { 
+	// extra function to print a char
      
         while(*str)
         { 
@@ -18,6 +19,8 @@ void printStr(char* str)
 
 Person* create_person(char* firstName, char* name, int day, int month, int year)
 {
+	// this function creates a person given the needed elements
+
 	Person* res = malloc(sizeof(Person));
 	res->firstName = firstName;
         res->name = name;	
@@ -28,19 +31,23 @@ Person* create_person(char* firstName, char* name, int day, int month, int year)
 
 void print_person(Person* pers)
 {
+	// this function prints a person with a custom message
+	
 	printf("Hello, my whole name is ");
 	printStr(pers->firstName);
 	printf(" ");
 	printStr(pers->name);
 	printf(" and I was born on ");
 	print_date(pers->birthDate);
-	printf("It is Nice to meet you!\n");
+	printf("\nIt is Nice to meet you!\n");
 
 
 }
 
 Person* duplicatePerson(Person* pers)
 {
+	// this function duplicates a person
+
 	Person* res = malloc(sizeof(Person));
 	res->firstName = pers->firstName;
         res->name = pers->name;
