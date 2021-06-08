@@ -23,11 +23,14 @@ int main()
 	// Person structure
 	
 	printf("\n-----------------------\n");
-	char* firstName = "Abdoul-Aziz";
-	char* name = "Hassane";
 	
-	Person* Aziz = create_person(firstName, name, 5, 9, 1999);
+	Person* Aziz = create_person("Abdoul-Aziz", "Hassane", 5, 9, 1999);
 	print_person(Aziz);
 	
+	Person *Zakia = create_person("Zakia", "AbdoulHaq", 7, 6, 2002);
+	print_person(Zakia);
+
+	compareDate(Aziz->birthDate, Zakia->birthDate);
+
 	return 0;
 }
