@@ -49,12 +49,12 @@ int main()
 
 	List* list = create_list();
 	
-	print_list(list);
+//	print_list(list);
 
-	insert(AzizBirthdate, list);
-	insert(d, list);
-	insert(date1, list);
-	insert(date2, list);
+	list = insert(AzizBirthdate, list);
+	list = insert(d, list);
+	list = insert(date1, list);
+	list = insert(date2, list);
 	print_list(list);
 
 	return 0;

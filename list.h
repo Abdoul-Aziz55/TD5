@@ -6,9 +6,8 @@
 
 typedef struct _List
 	{
-		int nbElements;
-		Date* p;
-	
+		Date* date;
+		struct _List* next;
 	} List;
 
 List* create_list();
